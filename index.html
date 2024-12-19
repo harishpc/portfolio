@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harish Padmanaban - Portfolio</title>
+    <title>Harish Padmanaban - Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -44,6 +44,23 @@
             text-decoration: none;
             font-size: 1.2em;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #003060;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         section {
             padding: 40px 10%;
         }
@@ -71,6 +88,29 @@
         .timeline-item p {
             margin: 0;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #004080;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        a {
+            color: #004080;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         footer {
             background: #003060;
             color: white;
@@ -85,8 +125,8 @@
         <img src="Harish_photo.jpg" alt="Harish Padmanaban">
         <h1>Harish Padmanaban</h1>
         <p>
-            Harish Padmanaban is an esteemed independent researcher in the Field of Site Reliability Engineering & AI , boasting 13 years of significant industry experience.
-            With over 12 research articles, 7 technical books, and 3 patents, Harish is a pioneer in AI, SRE, and cloud computing.
+            Harish Padmanaban is an esteemed independent researcher and AI specialist, boasting 13 years of significant industry experience.
+            With over 12 research articles, 7 technical books, and two patents, Harish is a pioneer in AI, SRE, and cloud computing.
         </p>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/harish-padmanaban-phd-39727442" target="_blank">LinkedIn</a>
@@ -94,27 +134,433 @@
         </div>
     </header>
 
-    <section>
+    <nav>
+        <a href="#thesis">Thesis</a>
+        <a href="#patents">Patents</a>
+        <a href="#books">Books</a>
+        <a href="#Research">Research</a>
+        <a href="#Researchreviews">Researchreviews</a>
+        <a href="#jury">Jury</a>
+        <a href="#membership">Membership</a>
+    </nav>
+
+    <section id="timeline">
         <h2>Professional Timeline</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <h3>IBM Graduate Intern</h3>
-                <p><strong>2012:</strong> Developed Makefile hierarchies and HPC tools to detect bottlenecks in parallel applications.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Oracle Software Engineering Intern</h3>
-                <p><strong>2013-2014:</strong> Built automation tools to improve Oracle Retail applications and identified over 1,000 product issues.</p>
+                <h3>J.P. Morgan Chase & Co.</h3>
+                <p><strong>2017-Present:</strong> Currently serving as Vice President, Site Reliability Engineering, leading innovation in AI-driven monitoring and cloud scalability.</p>
             </div>
             <div class="timeline-item">
                 <h3>Oracle DevOps Engineer</h3>
                 <p><strong>2014-2017:</strong> Developed 150+ automation scripts, managed CI/CD pipelines, and contributed to cloud migration projects.</p>
             </div>
             <div class="timeline-item">
-                <h3>J.P. Morgan Chase & Co.</h3>
-                <p><strong>2017-Present:</strong> Currently serving as Vice President, Site Reliability Engineering, leading innovation in AI-driven monitoring and cloud scalability.</p>
+                <h3>Oracle Software Engineering Intern</h3>
+                <p><strong>2013-2014:</strong> Built automation tools to improve Oracle Retail applications and identified over 1,000 product issues.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>IBM Graduate Intern</h3>
+                <p><strong>2012:</strong> Developed Makefile hierarchies and HPC tools to detect bottlenecks in parallel applications.</p>
             </div>
         </div>
     </section>
+
+    <!-- Add Sections for Thesis, Patents, Books, Research, Reviews, Jury, Membership -->
+    <!-- Thesis -->
+    <section id="thesis">
+        <h2>PhD Thesis</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Compare and analysis of existing software development lifecycle models to develop a new model using computational intelligence</td>
+                <td><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fxv3elcAAAAJ&citation_for_view=Fxv3elcAAAAJ:2osOgNQ5qMEC" target="_blank">View Thesis</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Patents -->
+    <section id="patents">
+        <h2>Patents</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Patent Office</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Systems and methods for non-human account tracking</td>
+                <td>2023</td>
+                <td>U.S.A</td>
+                <td><a href="https://patents.google.com/patent/US11762755B2/en" target="_blank">View Patent</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>System and method for automating SRE and project management tool metrics and creating user dynamic views</td>
+                <td>2024</td>
+                <td>U.S.A</td>
+                <td><a href="https://patents.google.com/patent/US20240264831A1/en?q=(Harish+Padmanaban)&oq=Harish+Padmanaban" target="_blank">View Patent</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cloud-Based Healthcare Data Management Device</td>
+                <td>2024</td>
+                <td>U.K</td>
+                <td><a href="https://drive.google.com/file/d/13NwpPO1mwIhKWrc4ko3cq_XS30mwBlJ6/view" target="_blank">View Patent</a></td>
+            </tr>
+        </table>
+    </section>
+    <!-- Patents -->
+    
+    <!-- Repeat for Books, Research, Reviews, Jury, Membership -->
+    <section id="books">
+        <h2>Books Authored</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Book Title</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AI-Driven Site Reliability Engineering: Proactive Monitoring and Automation</td>
+                <td>Explores how AI transforms SRE through predictive analytics, anomaly detection, and automation for enhanced system reliability.</td>
+                <td><a href="https://a.co/d/6tXUaou" target="_blank">Access Here</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>The Future of AI in Site Reliability: Predictive Analytics and Self-Healing Systems</td>
+                <td>Highlights the role of predictive analytics and self-healing systems in advancing Site Reliability Engineering.</td>
+                <td><a href="https://a.co/d/e9MbALj" target="_blank">Access Here</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Machine Learning in Production: Techniques and Case Studies</td>
+                <td>Practical insights into deploying, monitoring, and scaling machine learning models in production environments.</td>
+                <td><a href="https://a.co/d/jlUl2zh" target="_blank">Access Here</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Predictive Maintenance with Machine Learning: A Practical Guide</td>
+                <td>Demonstrates how predictive maintenance reduces equipment downtime and optimizes operations using ML techniques.</td>
+                <td><a href="https://a.co/d/cbuC8te" target="_blank">Access Here</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>AI-Driven DevOps and SRE: Revolutionizing Operations with Generative AI</td>
+                <td>Comprehensive guide on integrating Generative AI into DevOps and SRE practices for workflow optimization.</td>
+                <td><a href="https://a.co/d/iAG3bLX" target="_blank">Access Here</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Basics Of Artificial Intelligence And Intelligence Systems</td>
+                <td>A foundational book explaining AI principles, machine learning, and their applications in everyday systems.</td>
+                <td><a href="https://amzn.in/d/cWnbeT9" target="_blank">Access Here</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Mastering Site Reliability Engineering with Machine Learning</td>
+                <td>Deep insights into leveraging machine learning for building reliable and scalable systems in modern SRE practices.</td>
+                <td><a href="https://a.co/d/7N2kyki" target="_blank">Access Here</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="Research">
+    <h2>Research Contributions</h2>
+    <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>Journal/Conference</th>
+                <th>Year</th>
+                <th>Citations</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Critical study of software models used cloud application development</td>
+                <td>YK Sharma, P Harish</td>
+                <td>International Journal of Engineering & Technology</td>
+                <td>2018</td>
+                <td>86</td>
+                <td><a href="https://www.researchgate.net/profile/Harish-Padmanaban-2/publication/377572317_Critical_study_of_software_models_used_cloud_application_development/links/65ad55d7ee1e1951fbd79df6/Critical-study-of-software-models-used-cloud-application-development.pdf" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Navigating the Intricacies of Regulations: Leveraging AI/ML for Accurate Reporting</td>
+                <td>H Padmanaban</td>
+                <td>Journal of Knowledge Learning and Science Technology</td>
+                <td>2023</td>
+                <td>81</td>
+                <td><a href="https://jklst.org/index.php/home/article/view/153" target="_blank">View Paper</a></td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Implication of Artificial Intelligence in Software Development Life Cycle: A state of the art review</td>
+                <td>PH Padmanaban, YK Sharma</td>
+                <td>International Journal of Research and Reviews in Applied Sciences</td>
+                <td>2019</td>
+                <td>50</td>
+                <td><a href="https://www.researchgate.net/profile/Harish-Padmanaban-2/publication/377572222_Implication_of_Artificial_Intelligence_in_Software_Development_Life_Cycle_A_state_of_the_art_review/links/65ad54e5bf5b00662e333553/Implication-of-Artificial-Intelligence-in-Software-Development-Life-Cycle-A-state-of-the-art-review.pdf" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Quantum Computing and AI in the Cloud</td>
+                <td>H Padmanaban</td>
+                <td>Journal of Computational Intelligence and Robotics</td>
+                <td>2024</td>
+                <td>42</td>
+                <td><a href="https://thesciencebrigade.com/jcir/article/view/116" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Maximizing IoT Security: An Examination of Cryptographic Algorithms</td>
+                <td>L Arya, YK Sharma, R Kumar, H Padmanaban</td>
+                <td>2023 International Conference on Power Energy, Environment & Intelligent Control</td>
+                <td>2023</td>
+                <td>33</td>
+                <td><a href="https://ieeexplore.ieee.org/abstract/document/10451210" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Optimizing the Identification and Utilization of Open Parking Spaces Through Advanced Machine Learning</td>
+                <td>PC Harish Padmanaban, YK Sharma</td>
+                <td>Advances in Aerial Sensing and Imaging</td>
+                <td>2024</td>
+                <td>37</td>
+                <td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394175512.ch12" target="_blank">View Chapter</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Xception Taylor Cascade Neuro Network-based infection level identification of tuberculosis using sputum images</td>
+                <td>H Padmanaban, YK Sharma</td>
+                <td>International Journal of Biomedical Engineering and Technology</td>
+                <td>2024</td>
+                <td>28</td>
+                <td><a href="https://journals.sagepub.com/doi/full/10.3233/IDT-240395" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Developing a Cognitive Learning and Intelligent Data Analysis-Based Framework for Early Disease Detection</td>
+                <td>HP PC, YK Sharma</td>
+                <td>Optimized Predictive Models in Health Care Using Machine Learning</td>
+                <td>2024</td>
+                <td>30</td>
+                <td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394175376.ch16" target="_blank">View Chapter</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Neurogenesis of Intelligence Principles of Brain-Inspired Computing</td>
+                <td>Yogesh Kumar Sharma, Harish Padmanaban, Nimish Kumar</td>
+                <td>(Book Chapter)Revolutionizing AI with Brain-Inspired Technology: Neuromorphic Computing</td>
+                <td>2025</td>
+                <td>-</td>
+                <td><a href="https://www.igi-global.com/chapter/neurogenesis-of-intelligence-principles-of-brain-inspired-computing/362947" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Fuzzy Logic-Driven Machine Learning Algorithms for Improved Early Disease Diagnosis</td>
+                <td>Arya, Leena; Lavudiya, Narasimha Swamy; Sateesh, G.; Padmanaban, Harish; Srinivasulu, B. V.; Rastogi, Ravi</td>
+                <td>International Journal of Advanced Computer Science & Applications, 2024, Vol 15, Issue 11, p108</td>
+                <td>2024</td>
+                <td>-</td>
+                <td><a href="https://openurl.ebsco.com/EPDB%3Agcd%3A3%3A31496259/detailv2?sid=ebsco%3Aplink%3Ascholar&id=ebsco%3Agcd%3A181266136&crl=c&link_origin=scholar.google.com" target="_blank">View Chapter</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Securing the Internet of Things: AI-Powered Threat Detection and Safety Measures</td>
+                <td>Leena Arya, Yogesh Kumar Sharma, Suman Devi, Harish Padmanaban & Ramakrishna Kumar </td>
+                <td>The International Conference on Recent Innovations in Computing</td>
+                <td>2024</td>
+                <td>-</td>
+                <td><a href="https://link.springer.com/chapter/10.1007/978-981-97-3442-9_7" target="_blank">View Paper</a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Eyes in the Sky: Safeguarding Borders Security with AI-Powered Aerial Monitoring and IoT Integration</td>
+                <td>Leena Arya, Yogesh Kumar Sharma, Suman Devi, Harish Padmanaban & Ramakrishna Kumar</td>
+                <td>The International Conference on Recent Innovations in Computing</td>
+                <td>2024</td>
+                <td>-</td>
+                <td><a href="https://link.springer.com/chapter/10.1007/978-981-97-3442-9_61" target="_blank">View Chapter</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <section id="Researchreviews">
+    <h2>Research Reviews</h2>
+    <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Reviewed Article/Book Chapter</th>
+                <th>Journal/Conference</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Serverless Computing and DevOps: A Synergistic Approach to Modern Software Development</td>
+                <td>EAI ICCIGAI 2024, Main Track</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Disease Detection System Using ML Algorithms</td>
+                <td>EAI ICCIGAI 2024, Main Track</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Investigating Hyperparameter Effects on UNet for Oral Epithelial Layer Segmentation</td>
+                <td>EAI ICCIGAI 2024, Main Track</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>IN-DEPTH ANALYSIS OF FACE MASK DETECTION APPROACHES AMID THE COVID-19 PANDEMIC USING ML TECHNIQUES</td>
+                <td>EAI ICCIGAI 2024, Main Track</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Advanced Data Analytics for Prognostics and Health Management (PHM) in Industrial Engineering</td>
+                <td>International Journal of Research and Innovation in Applied Science</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Water Quality Monitoring and Prediction Using IoT and Analytics</td>
+                <td>3rd International Conference on Advancements in Smart Computing and Information Security (ASCIS)</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Comprehensive Comparative Study on Data Mining and Machine Learning Approaches for Fraud Detection</td>
+                <td>3rd International Conference on Advancements in Smart Computing and Information Security (ASCIS)</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Graph Convolutional Neural Networks for Link Prediction in Social Networks</td>
+                <td>Concepts and Techniques of Graph Neural Networks (IGI Global Book Chapter)</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Exploring Synergies and Innovations in GANs and Meta-Learning</td>
+                <td>Exploring Generative Adversarial Networks and Meta-Learning Synergies</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Future Directions and Emerging Trends in GANs and Meta-Learning Impact on Medical Diagnostics</td>
+                <td>Exploring Generative Adversarial Networks and Meta-Learning Synergies</td>
+                <td>2024</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section id="jury">
+    <h2>Jury and Hackathon Judge Experience</h2>
+    <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Event</th>
+                <th>Role</th>
+                <th>Year</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bharat Excellence Leadership Awards</td>
+                <td>Jury Member</td>
+                <td>2024</td>
+                <td><a href="https://theleadershipfederation.com/advisoryboardandjury" target="_blank">View Event</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Middle East Asia Leadership Awards</td>
+                <td>Jury Member</td>
+                <td>2024</td>
+                <td><a href="https://theleadershipfederation.com/advisoryboardandjury" target="_blank">View Event</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>RetroAI Quest Hackathon</td>
+                <td>Judge</td>
+                <td>2024</td>
+                <td><a href="https://textadventurehack.com/#judging_Industry" target="_blank">View Event</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section id="membership">
+    <h2>Memberships and Associations</h2>
+    <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Organization</th>
+                <th>Role</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>IEEE</td>
+                <td>Senior Member</td>
+                <td>Recognized as a Senior Member, a distinction held by only 8% of IEEE members globally.</td>
+                <td><a href="https://www.ieee.org/" target="_blank">Visit IEEE</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hackathon Raptors</td>
+                <td>Fellow Member</td>
+                <td>Active contributor and Fellow Member of the Hackathon Raptors organization.</td>
+                <td><a href="https://www.raptors.dev/our-members" target="_blank">Visit Raptors</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Innovative Computer Sciences Journal</td>
+                <td>Editorial Member</td>
+                <td>Serves on the editorial board of this high-impact journal in computer sciences.</td>
+                <td><a href="https://innovatesci-publishers.com/index.php/ICSJ/about/editorialTeam" target="_blank">Visit Journal</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Journal of Science & Technology</td>
+                <td>Editorial Member</td>
+                <td>Editorial member contributing to the advancement of science and technology research.</td>
+                <td><a href="https://thesciencebrigade.com/jst/about/editorialTeam" target="_blank">Visit Journal</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
     <footer>
         <p>© 2024 Harish Padmanaban | <a href="https://www.linkedin.com/in/harish-padmanaban-phd-39727442" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=Fxv3elcAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
