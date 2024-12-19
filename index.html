@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harish Padmanaban - Professional Portfolio</title>
+    <title>Harish Padmanaban - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -15,25 +15,34 @@
         header {
             background: #004080;
             color: white;
-            padding: 20px 10%;
             text-align: center;
+            padding: 50px 20px;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #003060;
-            padding: 10px;
-            position: sticky;
-            top: 0;
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid white;
         }
-        nav a {
-            margin: 0 15px;
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        header .social-links {
+            margin-top: 20px;
+        }
+        header .social-links a {
             color: white;
+            margin: 0 10px;
             text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
+            font-size: 1.2em;
         }
         section {
             padding: 40px 10%;
@@ -43,105 +52,72 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        table {
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .timeline-item {
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 40px;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ddd;
-        }
-        th {
-            background: #004080;
-            color: white;
-        }
-        tr:nth-child(even) {
+            max-width: 600px;
+            margin-bottom: 20px;
             background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #004080;
         }
-        a {
-            color: #004080;
-            text-decoration: none;
+        .timeline-item h3 {
+            margin: 0 0 10px;
         }
-        a:hover {
-            text-decoration: underline;
+        .timeline-item p {
+            margin: 0;
         }
         footer {
             background: #003060;
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="Harish_photo.jpg" alt="Harish Padmanaban">
         <h1>Harish Padmanaban</h1>
-        <p>AI and SRE Visionary | Author | Researcher | Innovator</p>
+        <p>
+            Harish Padmanaban is an esteemed independent researcher in the Field of Site Reliability Engineering & AI , boasting 13 years of significant industry experience.
+            With over 12 research articles, 7 technical books, and 3 patents, Harish is a pioneer in AI, SRE, and cloud computing.
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/harish-padmanaban-phd-39727442" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=Fxv3elcAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
     </header>
 
-    <nav>
-        <a href="#thesis">Thesis</a>
-        <a href="#patents">Patents</a>
-        <a href="#books">Books</a>
-        <a href="#research">Research</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#jury">Jury</a>
-        <a href="#membership">Membership</a>
-    </nav>
-
-    <section id="thesis">
-        <h2>PhD Thesis</h2>
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Compare and analysis of existing software development lifecycle models to develop a new model using computational intelligence</td>
-                <td><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fxv3elcAAAAJ&citation_for_view=Fxv3elcAAAAJ:2osOgNQ5qMEC" target="_blank">View Thesis</a></td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="patents">
-        <h2>Patents</h2>
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Year</th>
-                <th>Patent Office</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Systems and methods for non-human account tracking</td>
-                <td>2023</td>
-                <td>U.S.A</td>
-                <td><a href="https://patents.google.com/patent/US11762755B2/en" target="_blank">View Patent</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>System and method for automating SRE and project management tool metrics and creating user dynamic views</td>
-                <td>2024</td>
-                <td>U.S.A</td>
-                <td><a href="https://patents.google.com/patent/US20240264831A1/en?q=(Harish+Padmanaban)&oq=Harish+Padmanaban" target="_blank">View Patent</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Cloud-Based Healthcare Data Management Device</td>
-                <td>2024</td>
-                <td>U.K</td>
-                <td><a href="https://drive.google.com/file/d/13NwpPO1mwIhKWrc4ko3cq_XS30mwBlJ6/view" target="_blank">View Patent</a></td>
-            </tr>
-        </table>
+    <section>
+        <h2>Professional Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>IBM Graduate Intern</h3>
+                <p><strong>2012:</strong> Developed Makefile hierarchies and HPC tools to detect bottlenecks in parallel applications.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Oracle Software Engineering Intern</h3>
+                <p><strong>2013-2014:</strong> Built automation tools to improve Oracle Retail applications and identified over 1,000 product issues.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Oracle DevOps Engineer</h3>
+                <p><strong>2014-2017:</strong> Developed 150+ automation scripts, managed CI/CD pipelines, and contributed to cloud migration projects.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>J.P. Morgan Chase & Co.</h3>
+                <p><strong>2017-Present:</strong> Currently serving as Vice President, Site Reliability Engineering, leading innovation in AI-driven monitoring and cloud scalability.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Harish Padmanaban | <a href="https://www.linkedin.com/in/harish-padmanaban-phd-39727442" target="_blank">LinkedIn</a></p>
+        <p>© 2024 Harish Padmanaban | <a href="https://www.linkedin.com/in/harish-padmanaban-phd-39727442" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=Fxv3elcAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
     </footer>
 </body>
 </html>
