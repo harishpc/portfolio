@@ -24,15 +24,15 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .left-column {
-            flex: 0 0 25%;
-            padding: 20px;
-            text-align: center;
-            background-color: #004080;
-            color: white;
-            display: flex;
-            flex-direction: column;
-        }
+       .left-column {
+    flex: 0 0 25%;
+    padding: 20px;
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
 
         .left-column img {
             width: 180px;
@@ -53,18 +53,18 @@
             margin-bottom: 20px;
         }
 
-        .social-links {
-            margin-top: auto; /* Push to the bottom */
-        }
-
-        .social-links a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.1em;
-            display: block;
-            margin-bottom: 10px;
-        }
+        .left-column .social-links {
+    margin-top: 10px; /* Add some space above the links */
+    margin-bottom: 20px; /* Add margin to position below h1 */
+}
+ 
+.left-column .social-links a {
+    color: white;
+    text-decoration: underline; /* Underline to indicate hyperlink */
+    font-size: 1.1em;
+    display: inline-block; /* Change to inline-block */
+    margin: 0 10px; /* Add horizontal spacing */
+}
         .social-links a:hover {
             text-decoration: underline;
         }
@@ -76,22 +76,23 @@
         }
 
         nav {
-            display: flex;
-            justify-content: flex-start;
-            background: #003060;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            overflow-x: auto; /* Make it scrollable on small screens */
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            white-space: nowrap; /* Prevent wrapping */
-        }
+    display: flex;
+    justify-content: flex-start;
+    background: #003060;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow-x: auto; /* Add horizontal scrollbar */
+    white-space: nowrap; /* Prevent wrapping of nav items */
+}
+ 
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /* white-space: nowrap; (removed as it's already in 'nav') */
+}
         nav a:hover {
             text-decoration: underline;
         }
@@ -194,7 +195,8 @@
             <img src="Harish_photo.jpg" alt="Harish Padmanaban">
             <h1>Harish Padmanaban</h1>
             <p>
-                <b>"Who is Harish Padmanaban? Just your average AI innovator redefining reality, one algorithm at a time.</b> With over 13 years of bending machines to my will, I’ve managed to turn chaos into code, creating scalable systems that don’t just work—they thrive.
+            <b>"Who is Harish Padmanaban? Just your average AI innovator redefining reality, one algorithm at a time.</b> With over 13 years of bending machines to my will, I’ve managed to turn chaos into code, creating scalable systems that don’t just work—they thrive.
+From writing 7 technical books (because who needs free time?) to publishing 12 research articles that even Google Scholar loves, and holding two patents that turned heads in the AI and SRE world, I’ve made a habit of setting benchmarks others struggle to reach.
             </p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/harish-padmanaban-phd-39727442" target="_blank">LinkedIn</a>
